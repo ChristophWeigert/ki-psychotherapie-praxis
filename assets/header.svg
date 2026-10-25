@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1F4E4A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="360" rx="24" fill="#F6F1E7"/>
+  <circle cx="1090" cy="40" r="220" fill="#E7DFD0"/>
+
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <text x="80" y="110" font-size="22" font-weight="600" letter-spacing="3" fill="#C9784F">OPEN SOURCE · AGENT SKILLS</text>
+    <text x="80" y="190" font-size="68" font-weight="700" fill="#1F4E4A">Psychotherapie-Skills</text>
+    <text x="80" y="245" font-size="28" fill="#3E5F5B">KI-Vorlagen für Psychotherapeut:innen in Deutschland</text>
+    <g font-family="Cascadia Mono, Consolas, Menlo, monospace" font-size="20" fill="#1F4E4A">
+      <rect x="80" y="276" width="150" height="40" rx="20" fill="#FFFFFF" stroke="#D6CCBB"/>
+      <text x="101" y="302">/arztbrief</text>
+      <rect x="242" y="276" width="244" height="40" rx="20" fill="#FFFFFF" stroke="#D6CCBB"/>
+      <text x="263" y="302">/gutachterantrag</text>
+      <rect x="498" y="276" width="104" height="40" rx="20" fill="#FFFFFF" stroke="#D6CCBB"/>
+      <text x="519" y="302">/gdb</text>
+    </g>
+  </g>
+
+  <g transform="translate(990 70) rotate(4)">
+    <rect x="24" y="12" width="210" height="260" rx="14" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <g transform="translate(965 64) rotate(-3)" filter="url(#shadow)">
+    <rect width="210" height="260" rx="14" fill="#FFFFFF"/>
+    <rect x="24" y="26" width="86" height="11" rx="5.5" fill="#1F4E4A"/>
+    <rect x="24" y="46" width="56" height="8" rx="4" fill="#C9D3D1"/>
+    <rect x="24" y="80" width="162" height="8" rx="4" fill="#DCE3E1"/>
+    <rect x="24" y="98" width="144" height="8" rx="4" fill="#DCE3E1"/>
+    <rect x="24" y="116" width="156" height="8" rx="4" fill="#DCE3E1"/>
+    <rect x="24" y="134" width="104" height="8" rx="4" fill="#DCE3E1"/>
+    <rect x="24" y="164" width="162" height="8" rx="4" fill="#DCE3E1"/>
+    <rect x="24" y="182" width="84" height="8" rx="4" fill="#C9784F" opacity="0.55"/>
+    <path d="M28 226 q12 -16 24 0 t24 0 t24 0" fill="none" stroke="#1F4E4A" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(1210 90)" fill="#C9784F">
+    <path d="M0 -26 C3 -6 6 -3 26 0 C6 3 3 6 0 26 C-3 6 -6 3 -26 0 C-6 -3 -3 -6 0 -26Z"/>
+    <path transform="translate(-36 42) scale(0.45)" d="M0 -26 C3 -6 6 -3 26 0 C6 3 3 6 0 26 C-3 6 -6 3 -26 0 C-6 -3 -3 -6 0 -26Z" opacity="0.7"/>
+  </g>
+</svg>

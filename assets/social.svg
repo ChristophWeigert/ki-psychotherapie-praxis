@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1F4E4A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" fill="#F6F1E7"/>
+  <circle cx="1080" cy="120" r="260" fill="#E7DFD0"/>
+  <circle cx="1180" cy="560" r="140" fill="#EADBC9"/>
+
+  <!-- text block -->
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <text x="96" y="150" font-size="26" font-weight="600" letter-spacing="3" fill="#C9784F">OPEN SOURCE · AGENT SKILLS</text>
+    <text x="96" y="235" font-size="76" font-weight="700" fill="#1F4E4A">Psychotherapie-</text>
+    <text x="96" y="318" font-size="76" font-weight="700" fill="#1F4E4A">Skills</text>
+    <text x="96" y="388" font-size="30" fill="#3E5F5B">KI-Vorlagen für Psychotherapeut:innen</text>
+    <text x="96" y="430" font-size="30" fill="#3E5F5B">in Deutschland</text>
+
+    <g font-family="Cascadia Mono, Consolas, Menlo, monospace" font-size="22" fill="#1F4E4A">
+      <rect x="96" y="482" width="168" height="44" rx="22" fill="#FFFFFF" stroke="#D6CCBB"/>
+      <text x="120" y="511">/arztbrief</text>
+      <rect x="276" y="482" width="270" height="44" rx="22" fill="#FFFFFF" stroke="#D6CCBB"/>
+      <text x="300" y="511">/gutachterantrag</text>
+      <rect x="558" y="482" width="106" height="44" rx="22" fill="#FFFFFF" stroke="#D6CCBB"/>
+      <text x="582" y="511">/gdb</text>
+    </g>
+    <text x="96" y="580" font-size="22" fill="#7A8C88">github.com/ChristophWeigert/ki-psychotherapie-praxis</text>
+  </g>
+
+  <!-- document illustration -->
+  <g transform="translate(860 150) rotate(4)">
+    <rect x="30" y="20" width="300" height="380" rx="18" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <g transform="translate(830 140) rotate(-3)" filter="url(#shadow)">
+    <rect width="300" height="380" rx="18" fill="#FFFFFF"/>
+    <rect x="32" y="36" width="120" height="14" rx="7" fill="#1F4E4A"/>
+    <rect x="32" y="62" width="80" height="10" rx="5" fill="#C9D3D1"/>
+    <rect x="32" y="110" width="236" height="10" rx="5" fill="#DCE3E1"/>
+    <rect x="32" y="134" width="210" height="10" rx="5" fill="#DCE3E1"/>
+    <rect x="32" y="158" width="226" height="10" rx="5" fill="#DCE3E1"/>
+    <rect x="32" y="182" width="150" height="10" rx="5" fill="#DCE3E1"/>
+    <rect x="32" y="222" width="236" height="10" rx="5" fill="#DCE3E1"/>
+    <rect x="32" y="246" width="196" height="10" rx="5" fill="#DCE3E1"/>
+    <rect x="32" y="270" width="120" height="10" rx="5" fill="#C9784F" opacity="0.55"/>
+    <path d="M40 330 q18 -24 34 0 t34 0 t34 0" fill="none" stroke="#1F4E4A" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- sparkle -->
+  <g transform="translate(1130 150)" fill="#C9784F">
+    <path d="M0 -34 C4 -8 8 -4 34 0 C8 4 4 8 0 34 C-4 8 -8 4 -34 0 C-8 -4 -4 -8 0 -34Z"/>
+    <path transform="translate(-50 54) scale(0.45)" d="M0 -34 C4 -8 8 -4 34 0 C8 4 4 8 0 34 C-4 8 -8 4 -34 0 C-8 -4 -4 -8 0 -34Z" opacity="0.7"/>
+  </g>
+</svg>

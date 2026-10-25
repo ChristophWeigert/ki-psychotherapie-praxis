@@ -1,6 +1,12 @@
+<p align="center"><img src="assets/header.svg" alt="Psychotherapie-Skills – KI-Vorlagen für Psychotherapeut:innen in Deutschland" width="100%"></p>
+
 # Psychotherapie-Skills – KI-Vorlagen für Psychotherapeut:innen in Deutschland
 
 Vorlagen im offenen [Agent-Skills-Format](https://agentskills.io) (`SKILL.md`) für wiederkehrende Schreibarbeit in der psychotherapeutischen Praxis: Berichte, Anträge, Handouts. Nutzbar mit Claude Code, OpenAI Codex, GitHub Copilot, Cursor, Gemini CLI und anderen KI-Assistenten, die Skills unterstützen. Der Assistent fragt fehlende Angaben ab, schreibt einen Entwurf in deinen Ablageordner und überarbeitet ihn mit dir.
+
+> **English:** Open-source AI agent skills for psychotherapists in Germany – doctor's letters, insurance reports (PTV 3), disability (GdB) statements, safety plans. → [Read in English](README.en.md)
+
+⭐ **Hilft dir das?** Ein Stern oben rechts macht das Projekt für Kolleg:innen sichtbarer. Ideen für neue Vorlagen gern als [Issue](https://github.com/ChristophWeigert/ki-psychotherapie-praxis/issues).
 
 **Geltungsbereich:** Deutschland (GKV, Psychotherapie-Richtlinie, PTV-Formulare), alle Bundesländer. Für Österreich und die Schweiz passen die Vorlagen nicht ohne Anpassung (andere Kassen-, Antrags- und Behördenwege).
 
@@ -39,3 +45,7 @@ Die Skills liegen unter `.claude/skills/`, gemeinsame Regeln in `AGENTS.md`. Erw
 ## Eigene Skills ergänzen
 
 Neuer Ordner unter `.claude/skills/<name>/SKILL.md`, am besten eine bestehende Vorlage kopieren. Gemeinsame Regeln (Sprache, Gendern, Speicherort) stehen in [AGENTS.md](AGENTS.md) und müssen nicht in jedem Skill wiederholt werden. Regional gebundene Inhalte (Krisendienste, Versorgungsämter) im Skill-Namen oder in der Beschreibung kennzeichnen.
+
+## Lizenz
+
+[MIT](LICENSE)
