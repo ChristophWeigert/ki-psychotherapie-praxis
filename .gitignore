@@ -1,0 +1,8 @@
+# Patientendaten und persönliche Praxisangaben – nie committen
+berichte/
+praxis.md
+*.docx
+*.pdf
+
+# Lokale Werkzeug-Einstellungen
+.claude/settings.local.json
