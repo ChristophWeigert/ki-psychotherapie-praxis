@@ -30,7 +30,7 @@ Die Skills starten nur, wenn du sie ausdrücklich aufrufst (in Claude Code per `
 2. `ChristophWeigert/ki-psychotherapie-praxis` einfügen und **Synchronisieren** klicken. Die Warnung, dass das Plugin nicht von Anthropic stammt, bestätigen.
 3. Das Plugin **psychotherapie-praxis** installieren. Updates kommen danach von selbst.
 
-In Claude Code reicht: `/plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, dann `/plugin install psychotherapie-praxis@ki-psychotherapie-praxis`.
+In Claude Code reicht: `/plugin marketplace add https://github.com/ChristophWeigert/ki-psychotherapie-praxis.git`, dann `/plugin install psychotherapie-praxis@ki-psychotherapie-praxis`.
 
 **Codex:** `codex plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, dann `codex plugin add psychotherapie-praxis@ki-psychotherapie-praxis`. Updates holen: `codex plugin marketplace upgrade`.
 

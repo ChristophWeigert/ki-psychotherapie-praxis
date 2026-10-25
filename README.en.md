@@ -26,7 +26,7 @@ Skills only run when you call them explicitly (in Claude Code via `/command`, in
 
 ## Setup – 3 steps, no terminal needed
 
-**Claude Desktop (automatic updates):** Customize → Plugins → Personal → "+" → Add marketplace from GitHub, paste `ChristophWeigert/ki-psychotherapie-praxis`, click Sync, then install **psychotherapie-praxis**. Updates arrive automatically. Claude Code: `/plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, then `/plugin install psychotherapie-praxis@ki-psychotherapie-praxis`.
+**Claude Desktop (automatic updates):** Customize → Plugins → Personal → "+" → Add marketplace from GitHub, paste `ChristophWeigert/ki-psychotherapie-praxis`, click Sync, then install **psychotherapie-praxis**. Updates arrive automatically. Claude Code: `/plugin marketplace add https://github.com/ChristophWeigert/ki-psychotherapie-praxis.git`, then `/plugin install psychotherapie-praxis@ki-psychotherapie-praxis`.
 
 **Codex:** `codex plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, then `codex plugin add psychotherapie-praxis@ki-psychotherapie-praxis`; update with `codex plugin marketplace upgrade`. **Cursor:** open the folder (below), or import the repo as a team marketplace under Plugins → Import.
 
