@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Psychotherapie-Skills</title>
+  <rect width="512" height="512" rx="112" fill="#1F4E4A"/>
+  <!-- Blatt mit Eselsohr -->
+  <path d="M152 104h150l74 74v230a24 24 0 0 1-24 24H152a24 24 0 0 1-24-24V128a24 24 0 0 1 24-24z" fill="#F6F1E7"/>
+  <path d="M302 104v50a24 24 0 0 0 24 24h50z" fill="#E7DFD0"/>
+  <!-- Textzeilen -->
+  <g stroke="#3E5F5B" stroke-width="18" stroke-linecap="round">
+    <line x1="176" y1="222" x2="328" y2="222"/>
+    <line x1="176" y1="270" x2="328" y2="270"/>
+    <line x1="176" y1="318" x2="262" y2="318"/>
+  </g>
+  <!-- Sprechblase -->
+  <path d="M332 330h84a28 28 0 0 1 28 28v44a28 28 0 0 1-28 28h-40l-30 26v-26h-14a28 28 0 0 1-28-28v-44a28 28 0 0 1 28-28z" fill="#C9784F"/>
+  <g fill="#F6F1E7">
+    <circle cx="346" cy="380" r="9"/>
+    <circle cx="374" cy="380" r="9"/>
+    <circle cx="402" cy="380" r="9"/>
+  </g>
+</svg>
