@@ -1,0 +1,6 @@
+{
+  "name": "ki-psychotherapie-praxis",
+  "owner": { "name": "Christoph Weigert" },
+  "metadata": { "description": "KI-Vorlagen für die psychotherapeutische Praxis in Deutschland" },
+  "plugins": [{ "name": "psychotherapie-praxis", "source": "./" }]
+}

@@ -5,6 +5,7 @@ Nutzer:innen sind approbierte Psychologische Psychotherapeut:innen in Deutschlan
 ## Ablageordner
 Praxisangaben und Entwürfe liegen nicht in diesem Ordner, sondern in einem eigenen Ablageordner der Nutzer:in (so geht beim Aktualisieren nichts verloren).
 - Der Pfad steht in `ablageordner.txt` in diesem Ordner. Fehlt die Datei, vor dem ersten Speichern einmal fragen (Vorschlag: `Dokumente/Praxis-KI` im Benutzerordner), den Ordner anlegen und den vollständigen Pfad in `ablageordner.txt` schreiben.
+- Als Plugin installiert (dieser Ordner liegt dann z. B. unter `.claude/plugins/`, `.codex/plugins/` oder `.cursor/plugins/` und wird bei Updates ersetzt): `ablageordner.txt` hier weder lesen noch schreiben. Stattdessen `Dokumente/Praxis-KI` (bzw. `Documents/Praxis-KI`) im Benutzerordner verwenden, wenn es dort `praxis.md` gibt; sonst einmal nach dem Ablageordner fragen.
 - `praxis.md` und `berichte/` beziehen sich immer auf diesen Ablageordner.
 - Gibt es dort schon `praxis.md` und `berichte/`, einfach weiterverwenden.
 

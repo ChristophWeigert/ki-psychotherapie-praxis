@@ -1,0 +1,17 @@
+{
+  "name": "psychotherapie-praxis",
+  "description": "Vorlagen für Psychotherapeut:innen in Deutschland: Arztbrief, Gutachterantrag (PTV 3), GdB-Höherstufung, Indikation Mastektomie, Handout Suizidalität.",
+  "author": { "name": "Christoph Weigert" },
+  "homepage": "https://github.com/ChristophWeigert/ki-psychotherapie-praxis",
+  "repository": "https://github.com/ChristophWeigert/ki-psychotherapie-praxis",
+  "license": "MIT",
+  "keywords": ["psychotherapie", "arztbrief", "ptv3", "gdb", "praxis"],
+  "skills": "./.claude/skills/",
+  "interface": {
+    "displayName": "Psychotherapie-Praxis",
+    "shortDescription": "Berichte, Anträge und Handouts für die psychotherapeutische Praxis",
+    "developerName": "Christoph Weigert",
+    "category": "Productivity",
+    "websiteURL": "https://github.com/ChristophWeigert/ki-psychotherapie-praxis"
+  }
+}

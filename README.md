@@ -24,7 +24,21 @@ Regionale Angaben: Die Skills übernehmen das Bundesland aus `praxis.md` (sonst 
 
 Die Skills starten nur, wenn du sie ausdrücklich aufrufst (in Claude Code per `/befehl`, in anderen Werkzeugen über deren Skill-Aufruf oder z.B. „Nutze den Skill arztbrief“).
 
-## Einrichtung – 3 Schritte, kein Terminal nötig
+## Einrichtung in Claude Desktop – mit automatischen Updates
+
+1. In Claude Desktop **Anpassen → Plugins → Persönlich → „+“ → Marktplatz von GitHub hinzufügen** öffnen.
+2. `ChristophWeigert/ki-psychotherapie-praxis` einfügen und **Synchronisieren** klicken. Die Warnung, dass das Plugin nicht von Anthropic stammt, bestätigen.
+3. Das Plugin **psychotherapie-praxis** installieren. Updates kommen danach von selbst.
+
+In Claude Code reicht: `/plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, dann `/plugin install psychotherapie-praxis@ki-psychotherapie-praxis`.
+
+**Codex:** `codex plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, dann `codex plugin add psychotherapie-praxis@ki-psychotherapie-praxis`. Updates holen: `codex plugin marketplace upgrade`.
+
+**Cursor:** Einzelpersonen öffnen am einfachsten den Ordner (siehe unten). Teams können das Repo im Cursor-Dashboard unter *Plugins → Import* als Team-Marktplatz einbinden.
+
+Bei der Plugin-Variante liegen deine Unterlagen in `Dokumente/Praxis-KI`, außer du gibst beim ersten Mal einen anderen Ordner an.
+
+## Einrichtung als Ordner – für Codex, Cursor u. a.
 
 1. **Herunterladen:** [ZIP herunterladen](https://github.com/ChristophWeigert/ki-psychotherapie-praxis/archive/refs/heads/main.zip) und entpacken, z. B. nach `Dokumente/ki-psychotherapie-praxis`.
 2. **Öffnen:** Den Ordner in deinem KI-Assistenten öffnen (z. B. Claude Desktop, Codex, Cursor).

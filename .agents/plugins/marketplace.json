@@ -1,0 +1,12 @@
+{
+  "name": "ki-psychotherapie-praxis",
+  "interface": { "displayName": "KI-Vorlagen Psychotherapie-Praxis" },
+  "plugins": [
+    {
+      "name": "psychotherapie-praxis",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

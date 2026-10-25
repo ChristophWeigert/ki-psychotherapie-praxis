@@ -26,6 +26,12 @@ Skills only run when you call them explicitly (in Claude Code via `/command`, in
 
 ## Setup – 3 steps, no terminal needed
 
+**Claude Desktop (automatic updates):** Customize → Plugins → Personal → "+" → Add marketplace from GitHub, paste `ChristophWeigert/ki-psychotherapie-praxis`, click Sync, then install **psychotherapie-praxis**. Updates arrive automatically. Claude Code: `/plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, then `/plugin install psychotherapie-praxis@ki-psychotherapie-praxis`.
+
+**Codex:** `codex plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, then `codex plugin add psychotherapie-praxis@ki-psychotherapie-praxis`; update with `codex plugin marketplace upgrade`. **Cursor:** open the folder (below), or import the repo as a team marketplace under Plugins → Import.
+
+**Other tools (folder):**
+
 1. **Download:** [Download ZIP](https://github.com/ChristophWeigert/ki-psychotherapie-praxis/archive/refs/heads/main.zip) and unzip, e.g. to `Documents/ki-psychotherapie-praxis`.
 2. **Open:** Open the folder in your AI assistant (e.g. Claude Desktop, Codex, Cursor).
 3. **Start:** Type `/arztbrief` and paste your material (notes, prior findings) or point to a file. The first time, the assistant asks where your files should live (suggestion: `Documents/Praxis-KI`) and creates your practice details (`praxis.md`) and a `berichte/` folder there. Some assistants ask for permission the first time they save outside the opened folder – confirm once.

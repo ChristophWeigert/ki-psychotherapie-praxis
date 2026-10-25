@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ki-psychotherapie-praxis",
+  "description": "KI-Vorlagen für die psychotherapeutische Praxis in Deutschland",
+  "owner": { "name": "Christoph Weigert" },
+  "plugins": [
+    {
+      "name": "psychotherapie-praxis",
+      "description": "Arztbrief, Gutachterantrag (PTV 3), GdB-Höherstufung, Indikation Mastektomie, Handout Suizidalität",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
