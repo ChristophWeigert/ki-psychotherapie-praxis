@@ -18,7 +18,7 @@ Argumente (optional, falls beim Aufruf angegeben): $ARGUMENTS
 3. **Plausibilitätsprüfung:** Jahreszahlen gegeneinander prüfen (Geburtsjahr Patient:in vs. Kinder, Eltern, Heirat) und offensichtliche Tippfehler oder Hörfehler bei Spracheingabe (z.B. Berufsbezeichnungen) per Rückfrage klären, statt sie zu übernehmen. Unklare oder abgebrochene Sätze nie raten, sondern kurz nachfragen; bei Abweichungen (z.B. 24 bewilligte vs. 25 durchgeführte Stunden) vor dem Weiterarbeiten klären
 4. **Kontingentprüfung:** Bisher bewilligte KZT-Stunden + beantragte LZT-Stunden dürfen das VT-Höchstkontingent von 60 Stunden (Regelfall) nicht überschreiten – bei Abweichung nachfragen
 5. Bericht im Markdown-Format erstellen, begrenzt auf die behandlungsrelevanten Informationen und das Wortbudget (siehe unten)
-6. **Speicherort:** Bericht als Markdown-Datei im Repository unter `berichte/gutachterantrag-[Chiffre].md` ablegen; nach jeder Änderung die Datei aktualisieren. Nach dem ersten Entwurf nur das ändern, was die Therapeut:in nennt; nicht eigenmächtig kürzen oder umformulieren. Nicht belegte Annahmen (Ziele, Frequenz, Befund) im Entwurf kenntlich machen und zur Bestätigung vorlegen
+6. **Speicherort:** Bericht als Markdown-Datei im Ablageordner (siehe AGENTS.md) unter `berichte/gutachterantrag-[Chiffre].md` ablegen; nach jeder Änderung die Datei aktualisieren. Nach dem ersten Entwurf nur das ändern, was die Therapeut:in nennt; nicht eigenmächtig kürzen oder umformulieren. Nicht belegte Annahmen (Ziele, Frequenz, Befund) im Entwurf kenntlich machen und zur Bestätigung vorlegen
 7. **Abschlussprüfung** (siehe Checkliste am Ende) durchführen und das Ergebnis kurz mitteilen
 
 ## Abfragerunden

@@ -1,6 +1,7 @@
 # Patientendaten und persönliche Praxisangaben – nie committen
 berichte/
 praxis.md
+ablageordner.txt
 *.docx
 *.pdf
 

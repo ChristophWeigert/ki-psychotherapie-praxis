@@ -1,6 +1,6 @@
 # Praxisdaten (Vorlage)
 
-Nach `praxis.md` kopieren und ausfüllen. `praxis.md` wird nicht in Git gespeichert.
+Nach `praxis.md` in deinem Ablageordner (z. B. `Dokumente/Praxis-KI`) kopieren und ausfüllen. Meist nicht nötig: Der Assistent legt die Datei beim ersten Mal mit dir an.
 
 - **Name:** 
 - **Titel / Abschluss:** (z.B. M.Sc. Psych.)

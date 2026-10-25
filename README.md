@@ -1,6 +1,6 @@
 # Psychotherapie-Skills – KI-Vorlagen für Psychotherapeut:innen in Deutschland
 
-Vorlagen im offenen [Agent-Skills-Format](https://agentskills.io) (`SKILL.md`) für wiederkehrende Schreibarbeit in der psychotherapeutischen Praxis: Berichte, Anträge, Handouts. Nutzbar mit Claude Code, OpenAI Codex, GitHub Copilot, Cursor, Gemini CLI und anderen KI-Assistenten, die Skills unterstützen. Der Assistent fragt fehlende Angaben ab, schreibt einen Entwurf nach `berichte/` und überarbeitet ihn mit dir.
+Vorlagen im offenen [Agent-Skills-Format](https://agentskills.io) (`SKILL.md`) für wiederkehrende Schreibarbeit in der psychotherapeutischen Praxis: Berichte, Anträge, Handouts. Nutzbar mit Claude Code, OpenAI Codex, GitHub Copilot, Cursor, Gemini CLI und anderen KI-Assistenten, die Skills unterstützen. Der Assistent fragt fehlende Angaben ab, schreibt einen Entwurf in deinen Ablageordner und überarbeitet ihn mit dir.
 
 **Geltungsbereich:** Deutschland (GKV, Psychotherapie-Richtlinie, PTV-Formulare), alle Bundesländer. Für Österreich und die Schweiz passen die Vorlagen nicht ohne Anpassung (andere Kassen-, Antrags- und Behördenwege).
 
@@ -18,16 +18,22 @@ Regionale Angaben: Die Skills übernehmen das Bundesland aus `praxis.md` (sonst 
 
 Die Skills starten nur, wenn du sie ausdrücklich aufrufst (in Claude Code per `/befehl`, in anderen Werkzeugen über deren Skill-Aufruf oder z.B. „Nutze den Skill arztbrief“).
 
-## Einrichtung
+## Einrichtung – 3 Schritte, kein Terminal nötig
 
-1. Einen KI-Assistenten mit Skill-Unterstützung installieren und diesen Ordner öffnen. Die Skills liegen unter `.claude/skills/`; Claude Code findet sie dort direkt. Erwartet dein Werkzeug einen anderen Ordner (siehe dessen Dokumentation), den Ordner dorthin kopieren oder verlinken. Gemeinsame Regeln stehen in `AGENTS.md`, das die meisten Werkzeuge automatisch lesen.
-2. `praxis.example.md` nach `praxis.md` kopieren und ausfüllen (Name, Titel, Praxisadresse, Bundesland). Die Skills übernehmen diese Angaben, statt jedes Mal nachzufragen.
-3. Einen Skill aufrufen, z.B. `/arztbrief Verlaufsbericht` (Claude Code), und Unterlagen (Notizen, Vorbefunde) hineinkopieren oder als Datei angeben.
+1. **Herunterladen:** [ZIP herunterladen](https://github.com/ChristophWeigert/ki-psychotherapie-praxis/archive/refs/heads/main.zip) und entpacken, z. B. nach `Dokumente/ki-psychotherapie-praxis`.
+2. **Öffnen:** Den Ordner in deinem KI-Assistenten öffnen (z. B. Claude Desktop, Codex, Cursor).
+3. **Loslegen:** `/arztbrief` eingeben und Unterlagen (Notizen, Vorbefunde) hineinkopieren oder als Datei angeben. Beim ersten Mal fragt der Assistent, wo deine Unterlagen liegen sollen (Vorschlag: `Dokumente/Praxis-KI`), und legt dort deine Praxisangaben (`praxis.md`) und den Ordner `berichte/` an. Manche Assistenten fragen beim ersten Speichern außerhalb des geöffneten Ordners um Erlaubnis – einmal bestätigen.
+
+**Noch einfacher:** Sag deinem Assistenten: „Lade https://github.com/ChristophWeigert/ki-psychotherapie-praxis herunter und öffne den Ordner.“
+
+**Aktualisieren:** Neue ZIP herunterladen, entpacken, alten Ordner löschen. Deine Praxisangaben und Entwürfe bleiben im Ablageordner; der Assistent fragt nur einmal erneut nach dessen Pfad.
+
+Die Skills liegen unter `.claude/skills/`, gemeinsame Regeln in `AGENTS.md`. Erwartet dein Werkzeug die Skills in einem anderen Ordner, siehe dessen Dokumentation.
 
 ## Datenschutz – bitte lesen
 
 - **Patientendaten verlassen deinen Rechner.** Alles, was du eingibst, wird zur Verarbeitung an den Anbieter des KI-Modells übertragen (z.B. Anthropic, OpenAI, Google, Microsoft). Prüfe vor dem Einsatz mit echten Daten DSGVO (Art. 9, Art. 28 – Auftragsverarbeitungsvertrag) und deine Schweigepflicht (§ 203 StGB). Private Consumer-Konten haben in der Regel keinen AVV; nutze ein Business/Enterprise- oder API-Konto mit AVV und ohne Datenspeicherung zu Trainingszwecken, oder arbeite nur mit **pseudonymisierten** Daten (Chiffre, Initialen, keine Adresse/Geburtsdatum – Echtdaten erst im fertigen Dokument in deiner Praxissoftware ergänzen).
-- `berichte/` und `praxis.md` sind per `.gitignore` von Git ausgeschlossen. Lade dieses Repository mit Patientendaten **nie** auf GitHub o.Ä. hoch.
+- Entwürfe und Praxisangaben liegen in deinem Ablageordner, nicht in diesem Ordner. Lege den Ablageordner nicht in einen Cloud-Speicher ohne AVV und lade ihn **nie** auf GitHub o.Ä. hoch.
 - Jeder Entwurf ist ein Entwurf: fachlich prüfen, Verantwortung bleibt bei dir.
 
 ## Eigene Skills ergänzen
