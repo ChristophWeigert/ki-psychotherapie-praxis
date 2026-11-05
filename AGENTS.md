@@ -16,7 +16,7 @@ Wenn `praxis.md` im Ablageordner existiert, Absenderangaben (Name, Titel, Praxis
 - Fachsprache nach Psychotherapie-Richtlinie, ICD-10-GM für Diagnosen (mit Sicherheitsgrad G/V/A/Z).
 - Gendern mit Doppelpunkt (Patient:in), außer die Vorlage legt das Geschlecht der Person fest.
 - Nichts erfinden: fehlende oder unsichere Angaben als `[bitte ergänzen]` bzw. „_(bitte prüfen)_“ markieren und gesammelt nachfragen.
-- Ergebnisse als Markdown im Ablageordner unter `berichte/` speichern (Dateiname wie im jeweiligen Skill).
+- Ergebnisse als Markdown im Ablageordner unter `berichte/` speichern (Dateiname wie im jeweiligen Skill). Gibt es die Datei schon aus einer früheren Sitzung, nachfragen statt überschreiben.
 
 ## Datenschutz
 - Patientendaten und `praxis.md` nie in diesem Ordner ablegen; `ablageordner.txt` nie committen oder pushen; `.gitignore` nicht aufweichen.

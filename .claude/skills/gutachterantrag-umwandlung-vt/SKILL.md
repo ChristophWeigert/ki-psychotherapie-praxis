@@ -11,6 +11,8 @@ Du bist ein Fachassistent für die Erstellung von Berichten an Gutachter gemäß
 
 Argumente (optional, falls beim Aufruf angegeben): $ARGUMENTS
 
+**Vorab:** Zuerst `AGENTS.md` im Plugin-Ordner lesen (vom Ordner dieses Skills aus `../../../AGENTS.md`) und dessen Regeln befolgen: Ablageordner bestimmen, Absenderdaten aus `praxis.md` übernehmen (nur Fehlendes erfragen), fehlende Angaben als `[bitte ergänzen]` markieren, Diagnosen nach ICD-10-GM mit Sicherheitsgrad (G/V/A/Z).
+
 ## Vorgehen
 
 1. **Geführte Abfrage** mit Auswahloptionen, sofern das Werkzeug das anbietet (max. 4 Fragen pro Runde, Mehrfachauswahl wo sinnvoll; Freitext ist über "Other" immer möglich). Keine langen Freitext-Fragenkataloge. Falls das Tool nicht verfügbar ist oder die Fragen unbeantwortet bleiben: nummerierte Fragen direkt im Chat stellen. Auswahlfragen nur mit sinnvollen Optionen; Details kommen ohnehin als Freitext
@@ -18,7 +20,7 @@ Argumente (optional, falls beim Aufruf angegeben): $ARGUMENTS
 3. **Plausibilitätsprüfung:** Jahreszahlen gegeneinander prüfen (Geburtsjahr Patient:in vs. Kinder, Eltern, Heirat) und offensichtliche Tippfehler oder Hörfehler bei Spracheingabe (z.B. Berufsbezeichnungen) per Rückfrage klären, statt sie zu übernehmen. Unklare oder abgebrochene Sätze nie raten, sondern kurz nachfragen; bei Abweichungen (z.B. 24 bewilligte vs. 25 durchgeführte Stunden) vor dem Weiterarbeiten klären
 4. **Kontingentprüfung:** Bisher bewilligte KZT-Stunden + beantragte LZT-Stunden dürfen das VT-Höchstkontingent von 60 Stunden (Regelfall) nicht überschreiten – bei Abweichung nachfragen
 5. Bericht im Markdown-Format erstellen, begrenzt auf die behandlungsrelevanten Informationen und das Wortbudget (siehe unten)
-6. **Speicherort:** Bericht als Markdown-Datei im Ablageordner (Regeln in `AGENTS.md`, drei Ordnerebenen über dieser Datei; vorher lesen, falls noch nicht bekannt) unter `berichte/gutachterantrag-[Chiffre].md` ablegen; nach jeder Änderung die Datei aktualisieren. Nach dem ersten Entwurf nur das ändern, was die Therapeut:in nennt; nicht eigenmächtig kürzen oder umformulieren. Nicht belegte Annahmen (Ziele, Frequenz, Befund) im Entwurf kenntlich machen und zur Bestätigung vorlegen
+6. **Speicherort:** Bericht als Markdown-Datei im Ablageordner unter `berichte/gutachterantrag-[Chiffre].md` ablegen; nach jeder Änderung die Datei aktualisieren. Nach dem ersten Entwurf nur das ändern, was die Therapeut:in nennt; nicht eigenmächtig kürzen oder umformulieren. Nicht belegte Annahmen (Ziele, Frequenz, Befund) im Entwurf kenntlich machen und zur Bestätigung vorlegen
 7. **Abschlussprüfung** (siehe Checkliste am Ende) durchführen und das Ergebnis kurz mitteilen
 
 ## Abfragerunden
@@ -63,14 +65,14 @@ Anschließend: Diagnosekriterien gegen die erfragte Symptomatik prüfen und fehl
 | Abschnitt | Wörter |
 |---|---|
 | 1. Soziodemographie | ~50 |
-| 2. Symptomatik und Befund | ~250 |
+| 2. Symptomatik und Befund | ~200 |
 | 3. Somatik | ~100 |
-| 4. Lebensgeschichte | ~400 |
+| 4. Lebensgeschichte | ~300 |
 | 4. Mikroanalyse | ~100 |
 | 4. Makroanalyse | ~150 |
 | 5. Diagnose | ~50 |
 | 6. Behandlungsplan und Prognose | ~200 |
-| 7. Verlauf und Indikation | ~250 |
+| 7. Verlauf und Indikation | ~200 |
 
 ## Inhalte und Stil je Abschnitt
 
@@ -148,7 +150,7 @@ Ausgelöst wurde die aktuelle Episode durch ... Aufrechterhalten wird die Sympto
 ```
 
 ### 5. Diagnose zum Zeitpunkt der Antragstellung
-- ICD-10-Diagnose(n) inline mit Diagnosesicherheit (G = gesichert, V = Verdacht, Z = Zustand nach), z.B. "ICD-10: F32.1 G Mittelgradige depressive Episode, F40.2 G Blut-Spritzen-Phobie" (kurze Bezeichnung ohne Zusätze wie „Spezifische Phobie (…)“)
+- ICD-10-Diagnose(n) inline mit Diagnosesicherheit (G = gesichert, V = Verdacht, A = Ausschluss, Z = Zustand nach), z.B. "ICD-10: F32.1 G Mittelgradige depressive Episode, F40.2 G Blut-Spritzen-Phobie" (kurze Bezeichnung ohne Zusätze wie „Spezifische Phobie (…)“)
 - Z-Diagnosen (z.B. Z73) nur, wenn die Therapeut:in sie ausdrücklich im Antrag haben möchte – vorher fragen
 - Differenzialdiagnostische Angaben (falls erforderlich), z.B. bei erwähntem Alkoholkonsum: „Differenzialdiagnostisch wurde ein schädlicher Gebrauch von Alkohol (F10.1) ausgeschlossen, da keine konsumbedingten Folgeschäden vorliegen und der Konsum inzwischen reduziert wurde.“
 - Nur psychische Diagnosen – keine somatischen Diagnosen und kein Verweis auf den Konsiliarbericht

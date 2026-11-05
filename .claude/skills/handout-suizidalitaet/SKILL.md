@@ -9,11 +9,13 @@ disable-model-invocation: true
 
 Du erstellst ein individuell angepasstes Handout für suizidgefährdete Patient:innen mit einem regionalen Notfallplan für den Wohnort der Patient:in in Deutschland.
 
+**Vorab:** Zuerst `AGENTS.md` im Plugin-Ordner lesen (vom Ordner dieses Skills aus `../../../AGENTS.md`) und dessen Regeln befolgen: Ablageordner bestimmen, Absenderdaten aus `praxis.md` übernehmen (nur Fehlendes erfragen), fehlende Angaben als `[bitte ergänzen]` markieren, Diagnosen nach ICD-10-GM mit Sicherheitsgrad (G/V/A/Z).
+
 ## Vorgehen
 
 1. **Geführte Abfrage** mit Auswahloptionen, sofern das Werkzeug das anbietet (max. 4 Fragen pro Runde; Freitext ist über "Other" immer möglich). Falls das Tool nicht verfügbar ist oder die Fragen unbeantwortet bleiben: nummerierte Fragen direkt im Chat stellen
 2. Erstelle das Handout nach dem festgelegten Schema (siehe [references/schema.md](references/schema.md)) und halte die Formatierungsregeln ein
-3. **Speicherort:** Handout als Markdown-Datei im Ablageordner (Regeln in `AGENTS.md`, drei Ordnerebenen über dieser Datei; vorher lesen, falls noch nicht bekannt) unter `berichte/handout-akute-suizidalitaet-[region].md` ablegen (bei Autismus-Version Suffix `-autismus`)
+3. **Speicherort:** Handout als Markdown-Datei im Ablageordner unter `berichte/handout-akute-suizidalitaet-[region].md` ablegen (bei Autismus-Version Suffix `-autismus`)
 
 ## Informationen abfragen
 
