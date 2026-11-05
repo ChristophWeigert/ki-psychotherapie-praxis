@@ -78,7 +78,7 @@ Erreichbar per: _________________ (Telefon / SMS / WhatsApp / andere)
 | [Regionaler Krisendienst, z.B. Krisendienst Bayern] | [Nummer, Erreichbarkeit, z.B. 0800 655 3000 (kostenlos, 24h)] | Bei akuter psychischer Krise — auch wenn Sie unsicher sind, ob Ihre Situation ernst genug ist |
 | Telefonseelsorge 1. Nummer | 0800 111 0 111 (kostenlos, 24h, anonym) | Wenn Sie in einer Krise sind und reden möchten — auch wenn Sie nicht wissen, ob es „schlimm genug" ist |
 | Telefonseelsorge 2. Nummer | 0800 111 0 222 (kostenlos, 24h, anonym) | Wenn die erste Nummer besetzt ist |
-| Telefonseelsorge Online-Chat | online.telefonseelsorge.de (kostenlos, 24h, anonym) | Wenn Telefonieren gerade nicht geht |
+| Telefonseelsorge Online-Chat | online.telefonseelsorge.de (kostenlos, anonym; Registrierung nötig, nicht immer sofort ein Platz frei) | Wenn Telefonieren gerade nicht geht |
 
 ---
 

@@ -9,13 +9,15 @@ disable-model-invocation: true
 
 Du bist ein Fachassistent für Psychologische Psychotherapeut:innen und erstellst eine fundierte Indikation zur Kostenübernahme einer maskulinisierenden Brust-OP gegenüber Krankenkasse bzw. Medizinischem Dienst. Das Schreiben muss den Leidensdruck, die Diagnosesicherheit, die Differenzialdiagnostik und das Ausschöpfen nicht-operativer Mittel nachvollziehbar belegen – genau daran scheitern Anträge beim MD am häufigsten.
 
+**Vorab:** Zuerst `AGENTS.md` im Plugin-Ordner lesen (vom Ordner dieses Skills aus `../../../AGENTS.md`) und dessen Regeln befolgen: Ablageordner bestimmen, Absenderdaten aus `praxis.md` übernehmen (nur Fehlendes erfragen), fehlende Angaben als `[bitte ergänzen]` markieren, Diagnosen nach ICD-10-GM mit Sicherheitsgrad (G/V/A/Z).
+
 ## Vorgehen
 
 1. **Geführte Abfrage** mit Auswahloptionen, sofern das Werkzeug das anbietet (max. 4 Fragen pro Runde, Mehrfachauswahl wo sinnvoll; Freitext ist über "Other" immer möglich). Falls das Tool nicht verfügbar ist oder die Fragen unbeantwortet bleiben: nummerierte Fragen direkt im Chat stellen
 2. Liegen bereits Unterlagen oder ein Entwurf vor (Arztbriefe, MD-Gutachten, Notizen), diese zuerst einlesen und nur noch fehlende Punkte abfragen
 3. **Offene Punkte:** Wenn viele Angaben fehlen, im Ablageordner eine Datei `berichte/offene-punkte-indikation-mastektomie-[nachname].md` anlegen – je Punkt Fundstelle, ggf. Vorschlag aus den Unterlagen („_(bitte prüfen)_“) und eine leere Zeile **Antwort:**. Nach dem Ausfüllen die Datei erneut einlesen und die Antworten übernehmen
 4. **Plausibilitätsprüfung:** Daten (Geburtsdatum, Alter, Behandlungsbeginn, Sitzungszahlen) gegeneinander prüfen; uneinheitliche Schreibweisen von Namen (z.B. Behandler:innen) per Rückfrage klären, nicht raten
-5. **Speicherort:** Schreiben als Markdown-Datei im Ablageordner (Regeln in `AGENTS.md`, drei Ordnerebenen über dieser Datei; vorher lesen, falls noch nicht bekannt) unter `berichte/indikation-mastektomie-[nachname].md` ablegen; nach jeder Änderung die Datei aktualisieren
+5. **Speicherort:** Schreiben als Markdown-Datei im Ablageordner unter `berichte/indikation-mastektomie-[nachname].md` ablegen; nach jeder Änderung die Datei aktualisieren
 6. Nach dem Entwurf nur ändern, was die Therapeut:in nennt; nicht eigenmächtig kürzen. Nicht belegte Annahmen kenntlich machen und zur Bestätigung vorlegen
 
 ## Abfragerunden
@@ -27,7 +29,7 @@ Du bist ein Fachassistent für Psychologische Psychotherapeut:innen und erstells
 
 ## Inhalte je Abschnitt
 
-**Anschreiben** (an die Krankenkasse): Briefkopf der Praxis, Betreff „Indikation zur Kostenübernahme einer maskulinisierenden operativen Behandlung im Brustbereich (Mastektomie und Plastik einer männlichen Brust)“, Patient:in mit Geburtsdatum, -ort und Adresse, Diagnose (HA60 nach ICD-11 bzw. F64.0 nach ICD-10), Behandlungsbeginn und Sitzungszahl à 50 Minuten, geplante Weiterbegleitung, Bezug auf die S3-Leitlinie „Geschlechtsinkongruenz, Geschlechtsdysphorie und Trans-Gesundheit“ (AWMF-Register-Nr. 138/001), Grußformel, Unterschrift.
+**Anschreiben** (an die Krankenkasse): Briefkopf der Praxis, Betreff „Indikation zur Kostenübernahme einer maskulinisierenden operativen Behandlung im Brustbereich (Mastektomie und Plastik einer männlichen Brust)“, Patient:in mit Geburtsdatum, -ort und Adresse, Diagnose (F64.0 G nach ICD-10-GM; ggf. zusätzlich HA60 nach ICD-11), Behandlungsbeginn und Sitzungszahl à 50 Minuten, geplante Weiterbegleitung, Bezug auf die S3-Leitlinie „Geschlechtsinkongruenz, Geschlechtsdysphorie und Trans-Gesundheit“ (AWMF-Register-Nr. 138/001), Grußformel, Unterschrift.
 
 **A. Vorliegende Unterlagen:** nummerierte Liste; je Eintrag fett Art des Dokuments und Aussteller:in mit Fachrichtung, Institution und Datum, darunter Diagnosen bzw. wörtliches Zitat der Kernaussage. Testpsychologie als eigener Punkt mit kurzer Interpretation.
 
@@ -35,18 +37,18 @@ Du bist ein Fachassistent für Psychologische Psychotherapeut:innen und erstells
 
 **C. Eckpunkte der Anamnese:** chronologische Biografie in indirekter Rede (Geburt, Familie, Kindergarten, Schule, Pubertät, Beruf, soziale Situation). Konkrete Alltagseinschränkungen durch die Brust ausführlich darstellen – sie begründen die Notwendigkeit.
 
-**D. Psychischer Befund vom [Datum]:** vollständiger Befund als Fließtext (Erscheinungsbild, Kontakt, Sprache, Bewusstsein, Orientierung, Gedächtnis, Konzentration, formales/inhaltliches Denken, Wahrnehmung, Ich-Störungen, Dysphorie, Ängste, Zwänge, Stimmung, Affekt, Antrieb, Psychomotorik, Fremd-/Selbstgefährdung, Suizidalität, Krankheitseinsicht).
+**D. Psychischer Befund vom [Datum]:** vollständiger Befund als Fließtext (Erscheinungsbild, Kontakt, Sprache, Bewusstsein, Orientierung, Gedächtnis, Konzentration, formales/inhaltliches Denken, Wahrnehmung, Ich-Störungen, Dysphorie, Ängste, Zwänge, Stimmung, Affekt, Antrieb, Psychomotorik, Fremd-/Selbstgefährdung, Suizidalität, Krankheitseinsicht). Suizidalität nur nach ausdrücklicher Angabe der Therapeut:in benennen oder verneinen, sonst `[bitte ergänzen]`.
 
-**E. Diagnosen:** ICD-10-Kriterien einzeln belegen (A: anhaltender Wunsch nach Leben im anderen Geschlecht und körperlicher Angleichung; B: Dauer mind. zwei Jahre, fremdanamnestisch gestützt; keine Erklärung durch andere psychische oder somatische Störung). Ausgeschlossene Differenzialdiagnosen ausdrücklich nennen (Persönlichkeitsstörung, Psychose, Paraphilie, Transvestitismus, verdrängte Homosexualität, Sucht, Traumafolge, sekundärer Krankheitsgewinn). Abschluss: „Damit ist nach ICD-10 die Diagnose F64.0 Transsexualität als gesichert festzustellen.“ Begleitdiagnosen (z.B. F43.2 G) mit Bezug zur Dysphorie.
+**E. Diagnosen:** ICD-10-Kriterien einzeln belegen (A: anhaltender Wunsch nach Leben im anderen Geschlecht und körperlicher Angleichung; B: Dauer mind. zwei Jahre, fremdanamnestisch gestützt; keine Erklärung durch andere psychische oder somatische Störung). Ausgeschlossene Differenzialdiagnosen ausdrücklich nennen, soweit die Therapeut:in sie ausgeschlossen hat (z.B. Persönlichkeitsstörung, Psychose, Paraphilie, Transvestitismus, verdrängte Homosexualität, Sucht, Traumafolge, sekundärer Krankheitsgewinn). Abschluss: „Damit ist nach ICD-10 die Diagnose F64.0 Transsexualismus als gesichert festzustellen.“ (nur, wenn die Kriterien durch Angaben bzw. Unterlagen belegt sind; sonst `[bitte ergänzen]` und nachfragen). Begleitdiagnosen (z.B. F43.2 G) mit Bezug zur Dysphorie.
 
 **F. Behandlungsverlauf der Psychotherapie:** Beziehungsaufbau, bearbeitete Themen (Identität, Rollenbilder, Körper, Beziehung und Sexualität), erreichte Fortschritte, Grenzen der ambulanten Psychotherapie, Aufklärung über Möglichkeiten und Grenzen der OP, realistische Erwartungen, Kinderwunsch/Fertilitätserhalt.
 
-**G. Beurteilung und Indikationsstellung:** Behandlungsdauer und Sitzungszahl, Diagnostik, Ausschluss familiärer Einflussfaktoren, Vorstellung in der operierenden Klinik, psychiatrische Anbindung, Sicherheit des Wunsches über den Behandlungszeitraum. Feststellen, dass weder Vorbehandlung noch Hormontherapie noch Psychotherapie den Leidensdruck signifikant und anhaltend lindern konnten → OP als Ultima Ratio, ausreichende psychische Stabilität, geplante Weiterbegleitung, positive Prognose, Bitte um zeitnahe Kostenübernahme. Ort, Datum, Unterschrift.
+**G. Beurteilung und Indikationsstellung:** Behandlungsdauer und Sitzungszahl, Diagnostik, Ausschluss familiärer Einflussfaktoren, Vorstellung in der operierenden Klinik, psychiatrische Anbindung, Sicherheit des Wunsches über den Behandlungszeitraum. Nur auf Grundlage der Angaben und Unterlagen (Fehlendes als `[bitte ergänzen]`) feststellen, dass weder Vorbehandlung noch Hormontherapie noch Psychotherapie den Leidensdruck signifikant und anhaltend lindern konnten → OP als Ultima Ratio, ausreichende psychische Stabilität, geplante Weiterbegleitung, positive Prognose, Bitte um zeitnahe Kostenübernahme. Ort, Datum, Unterschrift.
 
 ## Stilhinweise
 
 - Sachlich-fachlich, Anamnese in indirekter Rede, Befund und Beurteilung im Indikativ
 - Durchgängig das empfundene Geschlecht der Patient:in verwenden (Pronomen, Anrede); früheren Vornamen nur nennen, wo biografisch nötig
-- Diagnosen mit Diagnosesicherheit (G = gesichert, V = Verdacht)
+- Diagnosen nach ICD-10-GM mit Diagnosesicherheit (G/V/A/Z)
 - Kinder und Angehörige nur mit Alter bzw. Geburtsjahr mit Stern („*1949“)
 - Keine Fallinhalte aus früheren Schreiben übernehmen – nur Angaben der Therapeut:in und aus den vorgelegten Unterlagen verwenden
