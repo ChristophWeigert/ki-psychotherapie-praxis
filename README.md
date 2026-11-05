@@ -38,10 +38,12 @@ In Claude Code reicht: `/plugin marketplace add https://github.com/ChristophWeig
 
 Bei der Plugin-Variante liegen deine Unterlagen in `Dokumente/Praxis-KI`, außer du gibst beim ersten Mal einen anderen Ordner an.
 
-## Einrichtung als Ordner – für Codex, Cursor u. a.
+## Einrichtung als Ordner – für Claude Desktop, Cursor u. a.
+
+Für Codex bitte die Plugin-Variante oben nutzen; im Ordner-Modus findet Codex die Skills nicht.
 
 1. **Herunterladen:** [ZIP herunterladen](https://github.com/ChristophWeigert/ki-psychotherapie-praxis/archive/refs/heads/main.zip) und entpacken, z. B. nach `Dokumente/ki-psychotherapie-praxis`.
-2. **Öffnen:** Den Ordner in deinem KI-Assistenten öffnen (z. B. Claude Desktop, Codex, Cursor).
+2. **Öffnen:** Den Ordner in deinem KI-Assistenten öffnen (z. B. Claude Desktop, Cursor).
 3. **Loslegen:** `/arztbrief` eingeben und Unterlagen (Notizen, Vorbefunde) hineinkopieren oder als Datei angeben. Beim ersten Mal fragt der Assistent, wo deine Unterlagen liegen sollen (Vorschlag: `Dokumente/Praxis-KI`), und legt dort deine Praxisangaben (`praxis.md`) und den Ordner `berichte/` an. Manche Assistenten fragen beim ersten Speichern außerhalb des geöffneten Ordners um Erlaubnis – einmal bestätigen.
 
 **Noch einfacher:** Sag deinem Assistenten: „Lade https://github.com/ChristophWeigert/ki-psychotherapie-praxis herunter und öffne den Ordner.“
@@ -52,13 +54,13 @@ Die Skills liegen unter `.claude/skills/`, gemeinsame Regeln in `AGENTS.md`. Erw
 
 ## Datenschutz – bitte lesen
 
-- **Patientendaten verlassen deinen Rechner.** Alles, was du eingibst, wird zur Verarbeitung an den Anbieter des KI-Modells übertragen (z.B. Anthropic, OpenAI, Google, Microsoft). Prüfe vor dem Einsatz mit echten Daten DSGVO (Art. 9, Art. 28 – Auftragsverarbeitungsvertrag) und deine Schweigepflicht (§ 203 StGB). Private Consumer-Konten haben in der Regel keinen AVV; nutze ein Business/Enterprise- oder API-Konto mit AVV und ohne Datenspeicherung zu Trainingszwecken, oder arbeite nur mit **pseudonymisierten** Daten (Chiffre, Initialen, keine Adresse/Geburtsdatum – Echtdaten erst im fertigen Dokument in deiner Praxissoftware ergänzen).
+- **Patientendaten verlassen deinen Rechner.** Alles, was du eingibst, wird zur Verarbeitung an den Anbieter des KI-Modells übertragen (z.B. Anthropic, OpenAI, Google, Microsoft). Prüfe vor dem Einsatz mit echten Daten DSGVO (Art. 9, Art. 28 – Auftragsverarbeitungsvertrag) und deine Schweigepflicht (§ 203 StGB). Private Consumer-Konten haben in der Regel keinen AVV; für echte Behandlungsdaten brauchst du ein Business/Enterprise- oder API-Konto mit AVV und ohne Datenspeicherung zu Trainingszwecken. Ohne AVV nur vollständig anonymisierte oder erfundene Fälle eingeben. Pseudonymisiere zusätzlich immer (Chiffre, Initialen, keine Adresse/Geburtsdatum – Echtdaten erst im fertigen Dokument in deiner Praxissoftware ergänzen); auch pseudonymisierte Angaben gelten nach DSGVO noch als personenbezogen, weil Lebensgeschichte und Kontext eine Person erkennbar machen können.
 - Entwürfe und Praxisangaben liegen in deinem Ablageordner, nicht in diesem Ordner. Lege den Ablageordner nicht in einen Cloud-Speicher ohne AVV und lade ihn **nie** auf GitHub o.Ä. hoch.
 - Jeder Entwurf ist ein Entwurf: fachlich prüfen, Verantwortung bleibt bei dir.
 
 ## Eigene Skills ergänzen
 
-Neuer Ordner unter `.claude/skills/<name>/SKILL.md`, am besten eine bestehende Vorlage kopieren. Gemeinsame Regeln (Sprache, Gendern, Speicherort) stehen in [AGENTS.md](AGENTS.md) und müssen nicht in jedem Skill wiederholt werden. Regional gebundene Inhalte (Krisendienste, Versorgungsämter) im Skill-Namen oder in der Beschreibung kennzeichnen.
+Neuer Ordner unter `.claude/skills/<name>/SKILL.md`, am besten eine bestehende Vorlage kopieren. Gemeinsame Regeln (Sprache, Gendern, Speicherort) stehen in [AGENTS.md](AGENTS.md) und müssen nicht in jedem Skill wiederholt werden; den Verweis auf `AGENTS.md` aus der Vorlage aber übernehmen, damit die Regeln auch in der Plugin-Variante gelten. Regional gebundene Inhalte (Krisendienste, Versorgungsämter) im Skill-Namen oder in der Beschreibung kennzeichnen.
 
 ## Lizenz
 
