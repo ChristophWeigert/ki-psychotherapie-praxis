@@ -94,7 +94,7 @@ Keine Bold-Überschriften innerhalb des Abschnitts – Symptomatik, psychischer 
 
 **Kürze:** Symptomlisten auf die für die ICD-Kriterien nötigen Symptome beschränken. Was die Mikroanalyse zeigt (z.B. Gesprächsabbruch), hier nicht wiederholen. Fremddiagnostik in einem Halbsatz („…, welche Anfang des Jahres in einem Testzentrum verifiziert wurden“), ohne Testdetails.
 
-**Psychischer Befund:** Knapp und verdichtet (Kontakt, Bewusstsein, "zu allen Qualitäten orientiert", Affekt inkl. Schwingungsfähigkeit, formales Denken inkl. Grübeln, psychotisches Erleben, Suizidalität, Krankheitsbewusstsein). Befundaussagen, die die Therapeut:in nicht genannt hat, als Annahme kenntlich machen und bestätigen lassen.
+**Psychischer Befund:** Knapp und verdichtet (Kontakt, Bewusstsein, "zu allen Qualitäten orientiert", Affekt inkl. Schwingungsfähigkeit, formales Denken inkl. Grübeln, psychotisches Erleben, Suizidalität, Krankheitsbewusstsein). Befundaussagen, die die Therapeut:in nicht genannt hat, als Annahme kenntlich machen und bestätigen lassen. Suizidalität nur nach ausdrücklicher Angabe der Therapeut:in benennen oder verneinen, sonst `[bitte ergänzen]`.
 
 **Schmerzsymptomatik (bei F45.41):** Dauer, Lokalisation, Verstärkung in psychisch belastenden Phasen und wechselseitige Verstärkung mit Depression/Angst explizit benennen.
 
@@ -272,7 +272,7 @@ K: Kurzfristig: C-/: [neg. Verstärkung] Langfristig: C-: [Bestrafung]
 - [ ] Lebensgeschichte durchgehend in Konjunktiv I
 - [ ] Keine Doppelungen zwischen den Abschnitten
 - [ ] Geschlechtsformen (Patientin/Patient) durchgehend korrekt
-- [ ] Makroanalyse und Behandlungsplan decken sich (kein aufrechterhaltender Faktor ohne Baustein, z.B. Alkohol); bei erwähntem Substanzkonsum F10 differenzialdiagnostisch ausgeschlossen
+- [ ] Makroanalyse und Behandlungsplan decken sich (kein aufrechterhaltender Faktor ohne Baustein, z.B. Alkohol); bei erwähntem Substanzkonsum passende F1x-Diagnose geprüft; Ausschluss nur, wenn die Therapeut:in ihn bestätigt hat
 - [ ] Nur tatsächlich erhobene Testergebnisse berichtet
 - [ ] Wortzahl ca. 1.200–1.400 (2–2,5 DIN-A4-Seiten); beim Zählen (z.B. `wc -w`) Überschriften und Kopfzeilen (~60 Wörter) abziehen
 

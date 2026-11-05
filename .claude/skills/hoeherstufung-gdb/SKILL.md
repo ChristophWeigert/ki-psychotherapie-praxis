@@ -95,7 +95,7 @@ Die Versorgungsbehörde benötigt nicht nur Diagnosen, sondern ausdrücklich die
 - Chronizität / Dauerhaftigkeit der Einschränkungen
 
 ### 8. Empfehlung
-- Gewünschte Formulierung (z.B. "bitte ich Sie einen angemessenen GdB zu vergeben" oder konkreter GdB-Vorschlag)
+- Gewünschte Formulierung (z.B. "bitte ich Sie, einen angemessenen GdB zu vergeben" oder konkreter GdB-Vorschlag)
 
 ## Ausgabeformat
 

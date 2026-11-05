@@ -9,7 +9,7 @@ disable-model-invocation: true
 
 Du erstellst ein individuell angepasstes Handout für suizidgefährdete Patient:innen mit einem regionalen Notfallplan für den Wohnort der Patient:in in Deutschland.
 
-**Vorab:** Zuerst `AGENTS.md` im Plugin-Ordner lesen (vom Ordner dieses Skills aus `../../../AGENTS.md`) und dessen Regeln befolgen: Ablageordner bestimmen, Absenderdaten aus `praxis.md` übernehmen (nur Fehlendes erfragen), fehlende Angaben als `[bitte ergänzen]` markieren, Diagnosen nach ICD-10-GM mit Sicherheitsgrad (G/V/A/Z).
+**Vorab:** Zuerst `AGENTS.md` im Plugin-Ordner lesen (vom Ordner dieses Skills aus `../../../AGENTS.md`) und dessen Regeln befolgen: Ablageordner bestimmen, fehlende Angaben als `[bitte ergänzen]` markieren.
 
 ## Vorgehen
 

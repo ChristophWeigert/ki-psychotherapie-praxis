@@ -185,7 +185,7 @@ Mit freundlichen Grüßen,
   - "hat sich erstmals am [Datum] persönlich in meiner psychotherapeutischen Praxis vorgestellt"
   - "befindet sich seit [Datum] in verhaltenstherapeutischer Behandlung in meiner psychotherapeutischen Praxis"
   - "Im Vordergrund stehen folgende Symptome:"
-  - "Ein suizidaler Handlungsimpuls oder Suizidgedanken wurden glaubhaft verneint"
+  - "Ein suizidaler Handlungsimpuls oder Suizidgedanken wurden glaubhaft verneint" (nur bei ausdrücklicher Angabe)
   - "Es ergaben sich keine Hinweise auf eine Fremdgefährdung"
   - "Ich habe dem Patienten angeraten..."
   - "Aus psychologisch-psychotherapeutischer Sicht scheint mir ... sinnvoll, da ..."
