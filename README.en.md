@@ -24,19 +24,21 @@ Regional details: the skills take the federal state from `praxis.md` (otherwise 
 
 Skills only run when you call them explicitly (in Claude Code via `/command`, in other tools via their skill invocation or e.g. "Use the skill arztbrief").
 
-## Setup – 3 steps, no terminal needed
+## Setup
 
 **Claude Desktop (automatic updates):** Customize → Plugins → Personal → "+" → Add marketplace from GitHub, paste `ChristophWeigert/ki-psychotherapie-praxis`, click Sync, then install **psychotherapie-praxis**. Updates arrive automatically. Claude Code: `/plugin marketplace add https://github.com/ChristophWeigert/ki-psychotherapie-praxis.git`, then `/plugin install psychotherapie-praxis@ki-psychotherapie-praxis`.
 
 **Codex:** `codex plugin marketplace add ChristophWeigert/ki-psychotherapie-praxis`, then `codex plugin add psychotherapie-praxis@ki-psychotherapie-praxis`; update with `codex plugin marketplace upgrade`. **Cursor:** open the folder (below), or import the repo as a team marketplace under Plugins → Import.
 
-**Other tools (folder):**
+With the plugin, your files live in `Documents/Praxis-KI` unless you choose a different folder the first time.
+
+**Other tools (folder, e.g. Claude Desktop, Cursor):** For Codex, use the plugin above; Codex does not find the skills in folder mode.
 
 1. **Download:** [Download ZIP](https://github.com/ChristophWeigert/ki-psychotherapie-praxis/archive/refs/heads/main.zip) and unzip, e.g. to `Documents/ki-psychotherapie-praxis`.
-2. **Open:** Open the folder in your AI assistant (e.g. Claude Desktop, Codex, Cursor).
+2. **Open:** Open the folder in your AI assistant (e.g. Claude Desktop, Cursor).
 3. **Start:** Type `/arztbrief` and paste your material (notes, prior findings) or point to a file. The first time, the assistant asks where your files should live (suggestion: `Documents/Praxis-KI`) and creates your practice details (`praxis.md`) and a `berichte/` folder there. Some assistants ask for permission the first time they save outside the opened folder – confirm once.
 
-**Even easier:** Tell your assistant: "Download https://github.com/ChristophWeigert/ki-psychotherapie-praxis and open the folder."
+**Even easier:** Tell your assistant: "Download https://github.com/ChristophWeigert/ki-psychotherapie-praxis and open the folder." (not for Codex)
 
 **Updating:** Download the new ZIP, unzip, delete the old folder. Your practice details and drafts stay in your storage folder; the assistant asks for its path once more.
 
@@ -44,13 +46,13 @@ Skills live in `.claude/skills/`, shared rules in `AGENTS.md`. If your tool expe
 
 ## Privacy – please read
 
-- **Patient data leaves your computer.** Everything you enter is sent to the AI model provider for processing (e.g. Anthropic, OpenAI, Google, Microsoft). Before using real data, check GDPR (Art. 9, Art. 28 – data processing agreement) and your duty of confidentiality (§ 203 German Criminal Code). Private consumer accounts usually have no data processing agreement; use a business/enterprise or API account with one and without training on your data, or work only with **pseudonymised** data (code, initials, no address/date of birth – add real data only in the finished document in your practice software).
+- **Patient data leaves your computer.** Everything you enter is sent to the AI model provider for processing (e.g. Anthropic, OpenAI, Google, Microsoft). Before using real data, check GDPR (Art. 9, Art. 28 – data processing agreement) and your duty of confidentiality (§ 203 German Criminal Code). Private consumer accounts usually have no data processing agreement; for real treatment data you need a business/enterprise or API account with one and without training on your data. Without a data processing agreement, enter only fully anonymised or fictional cases. Even with an agreement, always pseudonymise (code, initials, no address/date of birth – add real data only in the finished document in your practice software); pseudonymised data still counts as personal data under GDPR, because life history and context can identify a person.
 - Drafts and practice details live in your storage folder, not in this folder. Don't put the storage folder in cloud storage without a data processing agreement and **never** upload it to GitHub or similar.
 - Every draft is a draft: review it professionally; responsibility stays with you.
 
 ## Adding your own skills
 
-Create a new folder `.claude/skills/<name>/SKILL.md`, ideally by copying an existing template. Shared rules (language, gender-inclusive wording, storage location) are in [AGENTS.md](AGENTS.md) and don't need repeating in each skill. Mark region-specific content (crisis services, pension offices) in the skill name or description.
+Create a new folder `.claude/skills/<name>/SKILL.md`, ideally by copying an existing template. Shared rules (language, gender-inclusive wording, storage location) are in [AGENTS.md](AGENTS.md) and don't need repeating in each skill; but keep the template's reference to `AGENTS.md` so the rules also apply when installed as a plugin. Mark region-specific content (crisis services, pension offices) in the skill name or description.
 
 ## License
 

@@ -2,8 +2,17 @@
 berichte/
 praxis.md
 ablageordner.txt
+*.doc
 *.docx
+*.odt
+*.rtf
 *.pdf
+*.txt
+*.jpg
+*.jpeg
+*.heic
+*.png
+!assets/*.png
 
 # Lokale Werkzeug-Einstellungen
 .claude/settings.local.json
