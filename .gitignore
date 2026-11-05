@@ -11,6 +11,8 @@ ablageordner.txt
 *.jpg
 *.jpeg
 *.heic
+*.png
+!assets/*.png
 
 # Lokale Werkzeug-Einstellungen
 .claude/settings.local.json

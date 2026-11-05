@@ -46,7 +46,7 @@ Für Codex bitte die Plugin-Variante oben nutzen; im Ordner-Modus findet Codex d
 2. **Öffnen:** Den Ordner in deinem KI-Assistenten öffnen (z. B. Claude Desktop, Cursor).
 3. **Loslegen:** `/arztbrief` eingeben und Unterlagen (Notizen, Vorbefunde) hineinkopieren oder als Datei angeben. Beim ersten Mal fragt der Assistent, wo deine Unterlagen liegen sollen (Vorschlag: `Dokumente/Praxis-KI`), und legt dort deine Praxisangaben (`praxis.md`) und den Ordner `berichte/` an. Manche Assistenten fragen beim ersten Speichern außerhalb des geöffneten Ordners um Erlaubnis – einmal bestätigen.
 
-**Noch einfacher:** Sag deinem Assistenten: „Lade https://github.com/ChristophWeigert/ki-psychotherapie-praxis herunter und öffne den Ordner.“
+**Noch einfacher:** Sag deinem Assistenten: „Lade https://github.com/ChristophWeigert/ki-psychotherapie-praxis herunter und öffne den Ordner.“ (nicht für Codex)
 
 **Aktualisieren:** Neue ZIP herunterladen, entpacken, alten Ordner löschen. Deine Praxisangaben und Entwürfe bleiben im Ablageordner; der Assistent fragt nur einmal erneut nach dessen Pfad.
 
@@ -54,7 +54,7 @@ Die Skills liegen unter `.claude/skills/`, gemeinsame Regeln in `AGENTS.md`. Erw
 
 ## Datenschutz – bitte lesen
 
-- **Patientendaten verlassen deinen Rechner.** Alles, was du eingibst, wird zur Verarbeitung an den Anbieter des KI-Modells übertragen (z.B. Anthropic, OpenAI, Google, Microsoft). Prüfe vor dem Einsatz mit echten Daten DSGVO (Art. 9, Art. 28 – Auftragsverarbeitungsvertrag) und deine Schweigepflicht (§ 203 StGB). Private Consumer-Konten haben in der Regel keinen AVV; für echte Behandlungsdaten brauchst du ein Business/Enterprise- oder API-Konto mit AVV und ohne Datenspeicherung zu Trainingszwecken. Ohne AVV nur vollständig anonymisierte oder erfundene Fälle eingeben. Pseudonymisiere zusätzlich immer (Chiffre, Initialen, keine Adresse/Geburtsdatum – Echtdaten erst im fertigen Dokument in deiner Praxissoftware ergänzen); auch pseudonymisierte Angaben gelten nach DSGVO noch als personenbezogen, weil Lebensgeschichte und Kontext eine Person erkennbar machen können.
+- **Patientendaten verlassen deinen Rechner.** Alles, was du eingibst, wird zur Verarbeitung an den Anbieter des KI-Modells übertragen (z.B. Anthropic, OpenAI, Google, Microsoft). Prüfe vor dem Einsatz mit echten Daten DSGVO (Art. 9, Art. 28 – Auftragsverarbeitungsvertrag) und deine Schweigepflicht (§ 203 StGB). Private Consumer-Konten haben in der Regel keinen AVV; für echte Behandlungsdaten brauchst du ein Business/Enterprise- oder API-Konto mit AVV und ohne Datenspeicherung zu Trainingszwecken. Ohne AVV nur vollständig anonymisierte oder erfundene Fälle eingeben. Auch mit AVV immer pseudonymisieren (Chiffre, Initialen, keine Adresse/Geburtsdatum – Echtdaten erst im fertigen Dokument in deiner Praxissoftware ergänzen); auch pseudonymisierte Angaben gelten nach DSGVO noch als personenbezogen, weil Lebensgeschichte und Kontext eine Person erkennbar machen können.
 - Entwürfe und Praxisangaben liegen in deinem Ablageordner, nicht in diesem Ordner. Lege den Ablageordner nicht in einen Cloud-Speicher ohne AVV und lade ihn **nie** auf GitHub o.Ä. hoch.
 - Jeder Entwurf ist ein Entwurf: fachlich prüfen, Verantwortung bleibt bei dir.
 

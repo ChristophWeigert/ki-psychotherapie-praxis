@@ -38,7 +38,7 @@ With the plugin, your files live in `Documents/Praxis-KI` unless you choose a di
 2. **Open:** Open the folder in your AI assistant (e.g. Claude Desktop, Cursor).
 3. **Start:** Type `/arztbrief` and paste your material (notes, prior findings) or point to a file. The first time, the assistant asks where your files should live (suggestion: `Documents/Praxis-KI`) and creates your practice details (`praxis.md`) and a `berichte/` folder there. Some assistants ask for permission the first time they save outside the opened folder – confirm once.
 
-**Even easier:** Tell your assistant: "Download https://github.com/ChristophWeigert/ki-psychotherapie-praxis and open the folder."
+**Even easier:** Tell your assistant: "Download https://github.com/ChristophWeigert/ki-psychotherapie-praxis and open the folder." (not for Codex)
 
 **Updating:** Download the new ZIP, unzip, delete the old folder. Your practice details and drafts stay in your storage folder; the assistant asks for its path once more.
 
@@ -46,13 +46,13 @@ Skills live in `.claude/skills/`, shared rules in `AGENTS.md`. If your tool expe
 
 ## Privacy – please read
 
-- **Patient data leaves your computer.** Everything you enter is sent to the AI model provider for processing (e.g. Anthropic, OpenAI, Google, Microsoft). Before using real data, check GDPR (Art. 9, Art. 28 – data processing agreement) and your duty of confidentiality (§ 203 German Criminal Code). Private consumer accounts usually have no data processing agreement; for real treatment data you need a business/enterprise or API account with one and without training on your data. Without a data processing agreement, enter only fully anonymised or fictional cases. Always pseudonymise as well (code, initials, no address/date of birth – add real data only in the finished document in your practice software); pseudonymised data still counts as personal data under GDPR, because life history and context can identify a person.
+- **Patient data leaves your computer.** Everything you enter is sent to the AI model provider for processing (e.g. Anthropic, OpenAI, Google, Microsoft). Before using real data, check GDPR (Art. 9, Art. 28 – data processing agreement) and your duty of confidentiality (§ 203 German Criminal Code). Private consumer accounts usually have no data processing agreement; for real treatment data you need a business/enterprise or API account with one and without training on your data. Without a data processing agreement, enter only fully anonymised or fictional cases. Even with an agreement, always pseudonymise (code, initials, no address/date of birth – add real data only in the finished document in your practice software); pseudonymised data still counts as personal data under GDPR, because life history and context can identify a person.
 - Drafts and practice details live in your storage folder, not in this folder. Don't put the storage folder in cloud storage without a data processing agreement and **never** upload it to GitHub or similar.
 - Every draft is a draft: review it professionally; responsibility stays with you.
 
 ## Adding your own skills
 
-Create a new folder `.claude/skills/<name>/SKILL.md`, ideally by copying an existing template. Shared rules (language, gender-inclusive wording, storage location) are in [AGENTS.md](AGENTS.md) and don't need repeating in each skill. Mark region-specific content (crisis services, pension offices) in the skill name or description.
+Create a new folder `.claude/skills/<name>/SKILL.md`, ideally by copying an existing template. Shared rules (language, gender-inclusive wording, storage location) are in [AGENTS.md](AGENTS.md) and don't need repeating in each skill; but keep the template's reference to `AGENTS.md` so the rules also apply when installed as a plugin. Mark region-specific content (crisis services, pension offices) in the skill name or description.
 
 ## License
 
